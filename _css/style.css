@@ -1,0 +1,288 @@
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 120px;
+    position: absolute;
+    left: 500px;
+    top: -80px;
+}
+
+.league {
+    letter-spacing: -6px;
+    text-shadow: 0 2px 0 blue;
+}
+
+.on {
+    top: 5px;
+    position: relative;
+    padding:  2px;
+    background-image: -webkit-linear-gradient(bottom, rgb(0, 100, 150) 22%, rgb(201, 0, 0) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(218, 165, 32) 22%, rgb(201, 0, 0) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(218, 165, 32) 22%, rgb(201, 0, 0) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(218, 165, 32) 22%, rgb(201, 0, 0) 100%);
+    background-image: linear-gradient(bottom, #6D0202 22%, rgb(218, 165, 32) 100%);
+    color: #fff;
+    letter-spacing: -6px;
+    text-shadow: 0 3px 0 #000;
+    border-radius: 50% / 10%;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.87);
+}
+
+.on::before {
+    content: "On";
+    line-height: 70px;
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 3% / 50%;
+}
+
+#selector{
+    width:100%;
+    height:100%;
+    position: relative;
+    top: 20px;
+    z-index: -1;
+    
+}
+
+#logo{
+    height:20%;
+    position:relative;
+    top: 10px;
+    right: -380px;
+}
+
+#zigg{
+    width: 23%;
+    position: absolute;
+    top: 307px;
+}
+
+#amumu{
+    width: 23%;
+    position: absolute;
+    top: 530px;
+}
+
+#showdown{
+    width: 23%;
+    position: absolute;
+    top: 307px;
+    left: 1020px;
+}
+#teemo{
+    width: 23%;
+    position: absolute;
+    top: 530px;
+    left: 1020px;
+}
+
+#maokai{
+    width: 23%;
+    height: 28%;;
+    position: absolute;
+    top: 750px;
+    left: 1020px;
+}
+
+#heim{
+    width: 23%;
+    position: absolute;
+    top: 950px;
+    left: 1020px;
+}
+
+#poolziggs{
+    position: absolute;
+    width: 30%;
+    top: 500px;
+    left: 480px;
+}
+
+#thankyou{
+    position: absolute;
+    width: 14%;
+    top: 370px;
+    left: 580px;
+}
+
+#facebook{
+    position: absolute;
+    top: 590px;
+    left: 370px;
+    
+}
+
+h2{
+    font-family: 'Lucida Console', monospace;
+    font-size: 40px;
+    position: absolute;
+    top: 275px;
+    left: 340px;
+    background:white; 
+    border-style: solid;
+    border-color: #FFFFF0;
+    border-width: 5px;
+    -webkit-animation: myfirst 4s;
+    animation: myfirst 4s;
+}
+
+@-webkit-keyframes myfirst{
+    0%   {background: white;}
+    25%  {background: white;}
+    50%  {background: yellow;}
+    75%  {background: blue;}
+    100% {background: white;}
+}
+
+form.left{
+    position: absolute;
+    top: 600px;
+    left: 400px;
+    color: #333333;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    
+}
+
+form.right{
+    position: absolute;
+    top: 600px;
+    left: 700px;
+    color: #333333;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+}
+
+table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    width: 50%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    position: absolute;
+    top: 580px;
+    left: 330px;
+    cellspacing = 0px;
+    
+}
+
+th{
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
+    background-color: #A7C942;
+    color: #FFFFFF;
+    font-size: 10;
+}
+
+tr.odd{
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 8;
+}
+
+tr.even{
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
+    background-color: #EAF2D3;
+    color: black;
+    font-size: 8;
+}
+
+td{
+    padding: 3px 7px 2px 7px;
+    border: 1px solid #A7C942;
+}
+
+input.text{
+    font-size: 20px;
+    width: 250px;
+    color: blue; 
+    background: yellow; 
+}
+
+textarea{
+    font-size: 20px;
+    color: blue; 
+    background: yellow;
+}
+
+button.find{
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    background: #FFD700; 
+    top: 390px;
+    left: 650px;
+}
+
+button.new{
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    background: #6495ED; 
+    top: 390px;
+    left: 370px;
+}
+
+button.submit{
+    position: absolute;
+    color: red;
+    font-size: 40px;
+    background: #6495ED; 
+    top: 390px;
+    left: 50px;
+}
+
+button.form{
+    position: absolute;
+    color: red;
+    font-size: 25px;
+    background: #FFD700; 
+    top: 500px;
+    left: 370px;
+}
+
+button.list{
+    position: absolute;
+    color: red;
+    font-size: 27px;
+    background: #6495ED; 
+    top: 500px;
+    left: 690px;
+}
+
+button.back{
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    background: #FFD700; 
+    top: 820px;
+    left: 530px;
+}
+
+div.helper{
+    position: absolute;
+    top: 440px;
+    left: 371px;
+    height: 50px;
+    width: 550px;
+    color: #FFFFFF;
+    background: #00BFFF;
+    font-size: 23px;
+}
+
+div.fb-login-button{
+    position: absolute;
+    top: 260px;
+    left: 195px;
+}
+

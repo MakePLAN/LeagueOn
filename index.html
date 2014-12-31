@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="_css/style.css">
+    <script src="_script/buttons.js" type="text/javascript"></script>
+    
+    <body>
+        <img src='_image/logo.jpg' id='logo'/>
+        <div>
+            <h1>
+                <span class="league" id="test">eague</span>
+                <span class="on ">On</span>
+            </h1>
+        </div>
+        <script>
+            //var users = new Firebase("https://leagueon.firebaseio.com/");
+            function changetext(){
+                document.getElementById("title").innerHTML = "EveryOne!!!!!!";
+            }
+            function changeback(){
+                document.getElementById("title").innerHTML = "Who is Leaguing right now?";
+            }
+            /*users.child('Requests').once('value', function(snapshot) {//check if a child exists
+                if (snapshot.val() === null) {
+                    // There is no user 'Fred'! 
+                    $("#test").hide();
+                } 
+                else {
+                    //User 'Fred' exists.
+                    $("#test").show();
+                }
+            });*/
+        </script>
+        <h2 id="title" onmouseover="changetext()" onmouseout="changeback()"> Who is Leaguing right now?</h2>
+        
+        <button onclick ="findPressed()" class="find" id="findbutton" onmouseover ="findHelpershow()" onmouseout="findHelperhide()">Leaguers Requests</button>
+        <button onclick ="newPressed()" class="new" id="newbutton" onmouseover ="newHelpershow()" onmouseout="newHelperhide()">New Summoner</button>
+        <button onclick ="formPressed()" class="form" id="formbutton" onmouseover ="formHelpershow()" onmouseout="formHelperhide()">Leaguers Request Form</button>
+        <button onclick ="listPressed()" class="list" id="listbutton" onmouseover ="listHelpershow()" onmouseout="listHelperhide()">Availble Leaguers</button>
+        
+        <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
+        
+        <form></form>
+        <table></table>
+        
+        
+        <div class="helper" id="newhelpertext" >Help Leaguers to find you by entering your summoner information to the database!</div>
+        <div class="helper" id="findhelpertext" >Discover all the requests from summoners who seek leaguers!</div>
+        <div class="helper" id="formhelpertext" >Fill out this request form to discover the Leaguers you seek!</div>
+        <div class="helper" id="listhelpertext" >Discover the availble Leaguers!</div>
+        
+        <img src='_image/snowing.gif' id='selector'/>
+        <img src='_image/leaguezigg.jpg' id='zigg' onmouseover="this.src='_image/lulu.jpg'" onmouseout="this.src='_image/leaguezigg.jpg'"/>
+        <img src='_image/leagueamumu.jpg' id='amumu' onmouseover ="this.src = '_image/veigar.jpg'" onmouseout="this.src='_image/leagueamumu.jpg'"/>
+        <img src='_image/leaugesnowshowdown.jpg' id='showdown' onmouseover="this.src='_image/christmasgroup.jpg'" onmouseout="this.src='_image/leaugesnowshowdown.jpg'"/>
+        <img src='_image/leagueteemo.jpg' id ='teemo' onmouseover="this.src='_image/zilean.jpg'" onmouseout="this.src='_image/leagueteemo.jpg'"/>
+        <img src='_image/leaguemaokai.jpg' id ='maokai' onmouseover ="this.src='_image/maokai.png'" onmouseout="this.src='_image/leaguemaokai.jpg'"/>
+        <img src='_image/leagueheim.jpg' id ='heim' onmouseover="this.src='_image/heimer1.jpg'" onmouseout="this.src='_image/leagueheim.jpg'"/>
+        
+        
+    </body
+</head>
+</html>
