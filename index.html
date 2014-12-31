@@ -17,7 +17,7 @@
         <script>
             //var users = new Firebase("https://leagueon.firebaseio.com/");
             function changetext(){
-                document.getElementById("title").innerHTML = "EveryOne!!!!!!";
+                document.getElementById("title").innerHTML = "EveryOne!!!";
             }
             function changeback(){
                 document.getElementById("title").innerHTML = "Who is Leaguing right now?";
@@ -32,8 +32,60 @@
                     $("#test").show();
                 }
             });*/
+            
+            function changedep(){
+                var test = document.createElement("h3");
+                test.setAttribute("id", "profile")
+                var text = document.createTextNode("Name: Sang Woon (Ben) Lee");
+                var space = document.createElement("br");
+                test.appendChild(text);
+                test.appendChild(space);
+                space = document.createElement("br");
+                test.appendChild(space);
+                text = document.createTextNode("Year: Freshmen");
+                test.appendChild(text);
+                space = document.createElement("br");
+                test.appendChild(space);
+                space = document.createElement("br");
+                test.appendChild(space);
+                text = document.createTextNode("Major:");
+                test.appendChild(text);
+                space = document.createElement("br");
+                test.appendChild(space);
+                text = document.createTextNode("Computer Engineering");
+                test.appendChild(text);
+                space = document.createElement("br");
+                test.appendChild(space);
+                text = document.createTextNode("& Computer Science");
+                test.appendChild(text);
+                space = document.createElement("br");
+                test.appendChild(space);
+                space = document.createElement("br");
+                test.appendChild(space);
+                text = document.createTextNode("USC Class of 2018");
+                test.appendChild(text);
+                space = document.createElement("br");
+                test.appendChild(space);
+                space = document.createElement("br");
+                test.appendChild(space);
+                text = document.createTextNode("Summoner Name: SmrtAsian");
+                test.appendChild(text);
+                document.body.appendChild(test);
+                
+                $("#developer").show();
+              
+            }
+            
+            function changedepback(){
+                 $("#profile").remove();
+                 $("#developer").hide();
+            }
+            
         </script>
+        
         <h2 id="title" onmouseover="changetext()" onmouseout="changeback()"> Who is Leaguing right now?</h2>
+        <h2 id="developer1" onmouseover="changedep()" onmouseout="changedepback()"> Developer Info</h2>
+        <h3 id="instruction">Move your mouse pointer over each pictures and developer info Por Favor!!!</h3>
         
         <button onclick ="findPressed()" class="find" id="findbutton" onmouseover ="findHelpershow()" onmouseout="findHelperhide()">Leaguers Requests</button>
         <button onclick ="newPressed()" class="new" id="newbutton" onmouseover ="newHelpershow()" onmouseout="newHelperhide()">New Summoner</button>
@@ -58,7 +110,10 @@
         <img src='_image/leagueteemo.jpg' id ='teemo' onmouseover="this.src='_image/zilean.jpg'" onmouseout="this.src='_image/leagueteemo.jpg'"/>
         <img src='_image/leaguemaokai.jpg' id ='maokai' onmouseover ="this.src='_image/maokai.png'" onmouseout="this.src='_image/leaguemaokai.jpg'"/>
         <img src='_image/leagueheim.jpg' id ='heim' onmouseover="this.src='_image/heimer1.jpg'" onmouseout="this.src='_image/leagueheim.jpg'"/>
-        
+        <img src='_image/developer.jpg' id="developer"/>
+        <script>
+            $("#developer").hide();
+        </script>
         
     </body
 </head>

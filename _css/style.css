@@ -110,25 +110,63 @@ h1 {
     left: 580px;
 }
 
-#facebook{
+#developer{
+    width: 10%;
     position: absolute;
-    top: 590px;
-    left: 370px;
-    
+    top: 50px;
+    left: 10px;
 }
 
 h2{
     font-family: 'Lucida Console', monospace;
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
     top: 275px;
-    left: 340px;
+    left: 400px;
     background:white; 
     border-style: solid;
     border-color: #FFFFF0;
     border-width: 5px;
     -webkit-animation: myfirst 4s;
     animation: myfirst 4s;
+}
+
+#developer1{
+    font-family: 'Lucida Console', monospace;
+    font-size: 20px;
+    position: absolute;
+    top: 32px;
+    left: 150px;
+    background:white; 
+    border-style: solid;
+    border-color: #FFFFF0;
+    border-width: 5px;
+}
+
+#instruction{
+    font-family: 'Lucida Console', monospace;
+    font-size: 20px;
+    position: absolute;
+    top: 220px;
+    left: 200px;
+    background:white; 
+    border-style: solid;
+    border-color: #FFFFF0;
+    border-width: 5px;
+    -webkit-animation: myfirst 4s;
+    animation: myfirst 4s;
+}
+
+h3{
+    font-family: 'Lucida Console', monospace;
+    font-size: 14px;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    background:white; 
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
 }
 
 @-webkit-keyframes myfirst{
